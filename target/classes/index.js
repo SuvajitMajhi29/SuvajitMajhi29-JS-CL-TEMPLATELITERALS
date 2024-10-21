@@ -7,7 +7,7 @@ No other edits need to be made to the function.
 */
 function exercise1(name) {
 
-    let result = "Hey [FRIEND'S NAME],";
+    let result = `Hey ${name},`;
 
     document.getElementById("e1").innerText = result;
 
@@ -30,9 +30,9 @@ That was [ADJECTIVE 2]! We need to do it again soon."
 function exercise2(adj1, verb, adj2) {
 
     
-    let result = "I just wanted to take a moment to tell you how [ADJ1] you are!\n" +
-    "Remember that time we [VERB] together?\n" +
-    "That was [ADJ2]! We need to do it again soon.";
+    let result = `I just wanted to take a moment to tell you how ${adj1} you are!\n` +
+    `Remember that time we ${verb} together?\n` +
+    `That was ${adj2}! We need to do it again soon.`;
 
     document.getElementById("e2").innerText = result;
 
@@ -45,7 +45,7 @@ TODO: Edit the string assigned to the variable 'result' so that it uses a tagged
 */
 function exercise3(adj) {
 
-    let result = "I hope you're having a [ADJ] day!"
+    let result = sarcasmCase`I hope you're having a ${adj} day!`
 
     document.getElementById("e3").innerText = result;
 
